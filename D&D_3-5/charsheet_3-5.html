@@ -147,7 +147,7 @@
                     <td><input class="sheet-inputbox" type="text" name="attr_init" style="height: 24px; width: 30px;" title="init" value="floor(@{dex}/2-5)+@{initmiscmod}" disabled="true"> =<br><div style="font-size: 0.5em;">Total</div></td>
                     <td><input class="sheet-inputbox" type="text" name="attr_initdexmod" title="initdexmod" value="floor(@{dex}/2-5)" disabled="true" style="height: 24px; width: 30px;"> +<br><div style="font-size: 0.5em;">Dex Mod</div></td>
                     <td><input class="sheet-inputbox" type="text" name="attr_initmiscmod" title="initmiscmod" value="0" style="height: 24px; width: 30px;"><br><div style="font-size: 0.5em;">Misc Mod</div></td>
-                    <td><textarea rows="1" cols="50" style="width: 50px; height: 20px;" title="initmacro (modify to modify initiative roll macro)" name="attr_initmacro">@{character_name} rolls [[1d20 + @{selected|init} + ((@{selected|init})/100) &{tracker}]] for initiative.</textarea></td>
+                    <td><textarea rows="1" cols="50" style="width: 50px; height: 20px;" title="initmacro (modify to modify initiative roll macro)" name="attr_initmacro"@{character_name} rolls [[1d20 + floor(@{dex}/2-5)+@{initmiscmod}]] for initiative.</textarea></td>
                     <td><button class='tokenaction' type='roll' name='attr_initiative' title='initiative' value='@{initmacro}'></button> &nbsp; &nbsp;<br><div style="font-size: 0.5em;"> &nbsp; </div></td>
                     <td class="sheet-statlabel-big" style="width: 50px;">SPEED</td>
                     <td><input class="sheet-inputbox" type="text" name="attr_speed" title="speed" style="height: 24px; width: 85px;"><br><div style="font-size: 0.5em;">Speed</div></td>
